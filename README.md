@@ -1,3 +1,3 @@
 # deb-mirror
 
-Docker containwe to mirror the latest two versions of Debian and Ubuntu LTS
+Docker container to mirror the latest two versions of Debian and Ubuntu LTS
