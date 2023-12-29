@@ -12,6 +12,6 @@ RUN apt-get update -q \
     touch /var/log/cron.log 
 COPY mirror.list /etc/apt/mirror.list
 COPY entrypoint.sh /opt/entrypoint.sh
+RUN mkdir -p /mirror
 RUN chmod u+x /opt/entrypoint.sh
-VOLUME ["/mnt/mirror/debian"]
 ENTRYPOINT ["/opt/entrypoint.sh"]

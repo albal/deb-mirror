@@ -1,6 +1,6 @@
 ############# config ##################
 #
-set base_path    /mnt/mirror/debian
+set base_path    /mirror
 #
 # set mirror_path  $base_path/mirror
 # set skel_path    $base_path/skel
