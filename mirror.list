@@ -14,17 +14,36 @@ set _tilde 0
 #
 ############# end config ##############
 
-## Debian Bullseye (11)
+## Debian 12 (Bookworm)
+# BASE
+deb-amd64 http://ftp.uk.debian.org/debian/ bookworm main
+deb-amd64 http://security.debian.org/debian-security bookworm-security main contrib non-free
+deb-amd64 http://ftp.uk.debian.org/debian/ bookworm-updates main
+
+## Debian 11 (Bullseye)
 # BASE
 deb-amd64 http://ftp.uk.debian.org/debian/ bullseye main
 deb-amd64 http://security.debian.org/debian-security bullseye-security main contrib non-free
 deb-amd64 http://ftp.uk.debian.org/debian/ bullseye-updates main
 
-## Debian Buster (10)
+## Debian 10 (Buster)
 # BASE
 deb-amd64 http://ftp.uk.debian.org/debian/ buster main
 deb-amd64 http://security.debian.org/debian-security buster/updates main contrib non-free
 deb-amd64 http://ftp.uk.debian.org/debian/ buster-updates main
+
+## Ubuntu 24.04 LTS (Noble Numbat)
+# BASE
+deb http://gb.archive.ubuntu.com/ubuntu/ noble main restricted
+deb http://gb.archive.ubuntu.com/ubuntu/ noble-updates main restricted
+deb http://gb.archive.ubuntu.com/ubuntu/ noble universe
+deb http://gb.archive.ubuntu.com/ubuntu/ noble-updates universe
+deb http://gb.archive.ubuntu.com/ubuntu/ noble multiverse
+deb http://gb.archive.ubuntu.com/ubuntu/ noble-updates multiverse
+deb http://gb.archive.ubuntu.com/ubuntu/ noble-backports main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu/ noble-security main restricted
+deb http://security.ubuntu.com/ubuntu/ noble-security universe
+deb http://security.ubuntu.com/ubuntu/ noble-security multiverse
 
 ## Ubuntu 22.04 LTS (Jammy Jellyfish)
 # BASE
@@ -54,6 +73,6 @@ deb http://security.ubuntu.com/ubuntu/ focal-security multiverse
 
 # Cleanup old packages
 clean http://ftp.uk.debian.org/debian
+clean http://security.debian.org/debian-security
 clean http://gb.archive.ubuntu.com/ubuntu
 clean http://security.ubuntu.com/ubuntu
-
