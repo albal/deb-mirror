@@ -1,7 +1,7 @@
 FROM debian:11
 RUN apt-get update -q \
   && \
-    apt install -y -qq apt-mirror \
+    apt install -y -qq apt-mirror xz-utils \
   && \
     apt-get autoremove \
   && \
